@@ -1,0 +1,46 @@
+Nov-25 12:18:23.017 [main] DEBUG nextflow.cli.Launcher - $> nextflow run nf-core/circrna -r dev -profile docker -c /home/hqurashi/bigmem.config -w /data/hqurashi/7_circrna/work --input /media/pontikos_nas2/HarisQurashi/projects/7_circrna/data/samplesheet_HDF_D176_and_Jess_HDF.csv --outdir /media/pontikos_nas2/HarisQurashi/projects/7_circrna/results/di_vs_jess_test/ --tools circexplorer2 --quantification_tools ciriquant,psirc,sum,max --fasta /media/pontikos_nas2/HarisQurashi/refs/hg38.fa --gtf /media/pontikos_nas2/HarisQurashi/refs/gencode.v46.annotation.gtf --limitSjdbInsertNsj 2000000 -with-report -with-trace -with-timeline -resume
+Nov-25 12:18:36.181 [main] DEBUG nextflow.cli.CmdRun - N E X T F L O W  ~  version 25.04.8
+Nov-25 12:18:36.198 [main] DEBUG nextflow.plugin.PluginsFacade - Setting up plugin manager > mode=prod; embedded=false; plugins-dir=/home/hqurashi/.nextflow/plugins; core-plugins: nf-amazon@2.15.0-patch2,nf-azure@1.16.0-patch1,nf-cloudcache@0.4.3,nf-codecommit@0.2.3,nf-console@1.2.1,nf-google@1.21.1,nf-k8s@1.0.1,nf-tower@1.11.4-patch2,nf-wave@1.12.1
+Nov-25 12:19:05.898 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Enabled plugins: []
+Nov-25 12:19:10.375 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Disabled plugins: []
+Nov-25 12:19:10.378 [main] INFO  org.pf4j.DefaultPluginManager - PF4J version 3.12.0 in 'deployment' mode
+Nov-25 12:19:29.031 [main] INFO  org.pf4j.AbstractPluginManager - No plugins
+Nov-25 12:19:29.989 [main] DEBUG nextflow.scm.ProviderConfig - Using SCM config path: /home/hqurashi/.nextflow/scm
+Nov-25 12:19:30.657 [main] DEBUG nextflow.scm.AssetManager - Git config: /home/hqurashi/.nextflow/assets/nf-core/circrna/.git/config; branch: master; remote: origin; url: https://github.com/nf-core/circrna.git
+Nov-25 12:19:30.678 [main] DEBUG nextflow.scm.RepositoryFactory - Found Git repository result: [RepositoryFactory]
+Nov-25 12:19:30.684 [main] DEBUG nextflow.scm.AssetManager - Git config: /home/hqurashi/.nextflow/assets/nf-core/circrna/.git/config; branch: master; remote: origin; url: https://github.com/nf-core/circrna.git
+Nov-25 12:19:32.143 [main] DEBUG nextflow.config.ConfigBuilder - Found config base: /home/hqurashi/.nextflow/assets/nf-core/circrna/nextflow.config
+Nov-25 12:19:36.706 [main] DEBUG nextflow.config.ConfigBuilder - User config file: /home/hqurashi/bigmem.config
+Nov-25 12:19:36.707 [main] DEBUG nextflow.config.ConfigBuilder - Parsing config file: /home/hqurashi/.nextflow/assets/nf-core/circrna/nextflow.config
+Nov-25 12:19:36.707 [main] DEBUG nextflow.config.ConfigBuilder - Parsing config file: /home/hqurashi/bigmem.config
+Nov-25 12:19:45.957 [main] DEBUG n.secret.LocalSecretsProvider - Secrets store: /home/hqurashi/.nextflow/secrets/store.json
+Nov-25 12:19:45.959 [main] DEBUG nextflow.secret.SecretsLoader - Discovered secrets providers: [nextflow.secret.LocalSecretsProvider@37a9b687] - activable => nextflow.secret.LocalSecretsProvider@37a9b687
+Nov-25 12:19:45.966 [main] DEBUG nextflow.config.ConfigBuilder - Applying config profile: `docker`
+Nov-25 12:19:47.100 [main] DEBUG nextflow.config.ConfigBuilder - Applying config profile: `docker`
+Nov-25 12:19:47.113 [main] DEBUG nextflow.config.ConfigBuilder - Available config profiles: [bih, cfc_dev, uzl_omics, ifb_core, embl_hd, denbi_qbic, alice, mjolnir_globe, uppmax, giga, incliva, ilifu, ki_luria, uge, icr_alma, rosalind_uge, lugh, mccleary, unibe_ibu, vai, czbiohub_aws, jax, roslin, tes, scw, unc_longleaf, tigem, tubingen_apg, apollo, ipop_up, vsc_calcua, pdc_kth, ceci_nic5, ccga_cau, humantechnopole, stjude, daisybio, eddie, medair, biowulf, apptainer, bi, bigpurple, adcra, cedars, pawsey_setonix, vsc_kul_uhasselt, pawsey_nimbus, rki, ucl_myriad, utd_ganymede, charliecloud, fred_hutch, seattlechildrens, icr_davros, ceres, arm, munin, rosalind, hasta, cfc, uzh, shu_bmrc, ebi_codon_slurm, ebc, ccga_dx, crick, ku_sund_danhead, marvin, shifter, biohpc_gen, mana, mamba, york_viking, unc_lccc, wehi, awsbatch, wustl_htcf, arcc, ceci_dragon2, imperial, maestro, software_license, cannon, genotoul, nci_gadi, abims, eva_grace, janelia, nu_genomics, googlebatch, oist, sahmri, kaust, alliance_canada, test_igenomes, mpcdf, leicester, vsc_ugent, create, sage, cambridge, jex, podman, ebi_codon, cheaha, xanadu, nyu_hpc, test, marjorie, computerome, ucd_sonic, seg_globe, mssm, sanger, dkfz, bluebear, pasteur, einstein, ethz_euler, m3c, test_full, full, imb, ucl_cscluster, tuos_stanage, azurebatch, seadragon, crukmi, csiro_petrichor, qmul_apocrita, wave, docker, engaging, gis, hypatia, psmn, eva, unity, cropdiversityhpc, nygc, fgcz, conda, crg, singularity, mpcdf_viper, pe2, dirac, self_hosted_runner, tufts, uw_hyak_pedslabs, binac2, debug, hki_genie, genouest, cbe, unsw_katana, utd_juno, gitpod, phoenix, seawulf, uod_hpc, fub_curta, lovelace, uct_hpc, aws_tower, binac, fsu_draco]
+Nov-25 12:19:48.912 [main] WARN  nextflow.config.ConfigBuilder - It appears you have never run this project before -- Option `-resume` is ignored
+Nov-25 12:19:48.958 [main] DEBUG nextflow.cli.CmdRun - Applied DSL=2 by global default
+Nov-25 12:19:48.959 [main] DEBUG nextflow.cli.CmdRun - Launching `https://github.com/nf-core/circrna` [focused_linnaeus] DSL2 - revision: 06b806093a [dev]
+Nov-25 12:19:48.960 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins declared=[nf-schema@2.2.0]
+Nov-25 12:19:48.960 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins default=[]
+Nov-25 12:19:48.960 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins resolved requirement=[nf-schema@2.2.0]
+Nov-25 12:19:48.961 [main] DEBUG nextflow.plugin.PluginUpdater - Installing plugin nf-schema version: 2.2.0
+Nov-25 12:19:51.774 [main] ERROR nextflow.cli.Launcher - .nextflow/plr/d51bd35e-98a0-413b-a1fc-5c9fb1e1b60c/nf-schema-2.2.0: Operation not supported
+java.nio.file.FileSystemException: .nextflow/plr/d51bd35e-98a0-413b-a1fc-5c9fb1e1b60c/nf-schema-2.2.0: Operation not supported
+	at java.base/sun.nio.fs.UnixException.translateToIOException(UnixException.java:100)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:106)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:111)
+	at java.base/sun.nio.fs.UnixFileSystemProvider.createSymbolicLink(UnixFileSystemProvider.java:471)
+	at java.base/java.nio.file.Files.createSymbolicLink(Files.java:1069)
+	at nextflow.plugin.LocalPluginManager.createLink0(LocalPluginManager.groovy:118)
+	at nextflow.plugin.LocalPluginManager.createLinkFromPath(LocalPluginManager.groovy:111)
+	at nextflow.plugin.LocalPluginManager.loadPluginFromPath(LocalPluginManager.groovy:97)
+	at nextflow.plugin.PluginUpdater.load0(PluginUpdater.groovy:389)
+	at nextflow.plugin.PluginUpdater.installPlugin(PluginUpdater.groovy:224)
+	at nextflow.plugin.PluginUpdater.prepareAndStart(PluginUpdater.groovy:171)
+	at nextflow.plugin.PluginsFacade.start(PluginsFacade.groovy:399)
+	at nextflow.plugin.PluginsFacade.load(PluginsFacade.groovy:289)
+	at nextflow.plugin.Plugins.load(Plugins.groovy:55)
+	at nextflow.cli.CmdRun.run(CmdRun.groovy:340)
+	at nextflow.cli.Launcher.run(Launcher.groovy:513)
+	at nextflow.cli.Launcher.main(Launcher.groovy:673)
